@@ -1,1 +1,1 @@
-web: gunicorn sportsintel.wsgi
+web:gunicorn sportsintel.wsgi
