@@ -1,1 +1,1 @@
-web: gunicorn sportsintel.wsgi
+waitress-serve --listen=*:8000 sportsintel.wsgi:application
