@@ -1,1 +1,4 @@
-waitress-serve --listen=*:8000 sportsintel.wsgi:application
+
+
+release: python manage.py migrate
+web: run-program waitress-serve --port=$PORT sportsintel.wsgi:application
