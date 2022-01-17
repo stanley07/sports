@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-%#az8mchzd6s@)9i6_8okte0rejr0+v_7czi)@^^%vl4p9bgz$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost' ,'sportsintel.herokuapp.com', port=8001]
+ALLOWED_HOSTS = ['localhost' ,'sportsintel.herokuapp.com']
 
 
 # Application definition
@@ -56,6 +56,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'sportsintel.urls'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
