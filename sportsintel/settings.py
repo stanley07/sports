@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 from waitress import serve
-from my_wsgi_project import app
+
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
