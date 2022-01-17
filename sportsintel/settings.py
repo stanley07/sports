@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from waitress import serve
+from my_wsgi_project import app
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +29,7 @@ SECRET_KEY = 'django-insecure-%#az8mchzd6s@)9i6_8okte0rejr0+v_7czi)@^^%vl4p9bgz$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost' ,'sportsintel.herokuapp.com']
+ALLOWED_HOSTS = ['localhost' ,'sportsintel.herokuapp.com', port=8001]
 
 
 # Application definition
